@@ -164,7 +164,7 @@ const getTimeLeft = l => new Promise(async (y, d) => {
 			});
 		}
 		const H = parseInt(i.data.result.data.content.fields.last_claim);
-		const r = new Date(H + 7200000);
+		const r = new Date(H + 10800000);
 		const U = r - new Date();
 		y(U);
 	} catch (a) {
